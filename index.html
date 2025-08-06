@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rovic James Somontina | Automation Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes typewriter {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typewriter 2s steps(40) 1s 1 normal both;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen font-mono">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <!-- Header Section -->
+        <header class="text-center mb-16 fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Rovic James Somontina</h1>
+            <h2 class="text-xl md:text-2xl text-blue-400 mb-8 typewriter">Aspiring Automation Developer</h2>
+            <div class="max-w-2xl mx-auto text-lg text-gray-300 leading-relaxed">
+                <p>"Hi, I'm Rovic James Somontina. I'm currently learning and mastering n8n automation. I'm passionate about building powerful workflows and exploring how automation can simplify digital processes. This site documents my journey and future projects."</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- About Me -->
+            <section class="bg-gray-800 rounded-xl p-6 card-hover fade-in" style="animation-delay: 0.2s;">
+                <h2 class="text-2xl font-bold mb-4 text-blue-400 flex items-center">
+                    <i class="fas fa-user mr-2"></i> About Me
+                </h2>
+                <p class="text-gray-300 mb-4">
+                    I'm a self-taught automation enthusiast with a passion for streamlining digital workflows. My journey began when I discovered how much time could be saved through intelligent automation.
+                </p>
+                <p class="text-gray-300">
+                    When I'm not building workflows, you can find me exploring new technologies, contributing to open-source projects, or documenting my learning process to help others.
+                </p>
+            </section>
+
+            <!-- Current Tools -->
+            <section class="bg-gray-800 rounded-xl p-6 card-hover fade-in" style="animation-delay: 0.4s;">
+                <h2 class="text-2xl font-bold mb-4 text-purple-400 flex items-center">
+                    <i class="fas fa-tools mr-2"></i> Current Tools
+                </h2>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <i class="fas fa-cog text-blue-400 mr-2"></i>
+                        <span class="text-gray-300">n8n (Node-based workflow automation)</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-plug text-green-400 mr-2"></i>
+                        <span class="text-gray-300">Webhooks & API Integrations</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-code text-yellow-400 mr-2"></i>
+                        <span class="text-gray-300">JavaScript for custom functions</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-server text-red-400 mr-2"></i>
+                        <span class="text-gray-300">Cloud Services (AWS, GCP)</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- What I'm Learning -->
+            <section class="bg-gray-800 rounded-xl p-6 card-hover fade-in" style="animation-delay: 0.6s;">
+                <h2 class="text-2xl font-bold mb-4 text-green-400 flex items-center">
+                    <i class="fas fa-graduation-cap mr-2"></i> What I'm Learning
+                </h2>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <i class="fas fa-spinner text-blue-400 mr-2 animate-spin"></i>
+                        <span class="text-gray-300">Advanced n8n functions and expressions</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-exclamation-triangle text-yellow-400 mr-2"></i>
+                        <span class="text-gray-300">Error handling and debugging workflows</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-moon text-purple-400 mr-2"></i>
+                        <span class="text-gray-300">Dark mode customization for tools</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-project-diagram text-green-400 mr-2"></i>
+                        <span class="text-gray-300">Complex workflow architecture</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Contact Me -->
+            <section class="bg-gray-800 rounded-xl p-6 card-hover fade-in" style="animation-delay: 0.8s;">
+                <h2 class="text-2xl font-bold mb-4 text-pink-400 flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> Contact Me
+                </h2>
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-300 mb-1">Name</label>
+                        <input type="text" id="name" class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 mb-1">Email</label>
+                        <input type="email" id="email" class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 mb-1">Message</label>
+                        <textarea id="message" rows="4" class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded hover:opacity-90 transition-opacity">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-6 flex space-x-4">
+                    <a href="https://www.linkedin.com/in/rovic-somontina-7b65bb331/" class="text-gray-300 hover:text-blue-400 transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/rovic.jhin/" class="text-gray-300 hover:text-gray-100 transition-colors">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jhinhlfk/" class="text-gray-300 hover:text-red-400 transition-colors">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Projects/Work Showcase -->
+        <section class="mb-16 fade-in" style="animation-delay: 1s;">
+            <h2 class="text-3xl font-bold mb-8 text-center gradient-text">Featured Workflows</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 rounded-xl p-6 card-hover">
+                    <div class="text-blue-400 text-2xl mb-3">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Auto-Scheduler</h3>
+                    <p class="text-gray-300">Automated calendar management with n8n and Google Calendar API</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 card-hover">
+                    <div class="text-green-400 text-2xl mb-3">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Smart Inbox</h3>
+                    <p class="text-gray-300">Email processing workflow with categorization and auto-responses</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 card-hover">
+                    <div class="text-purple-400 text-2xl mb-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Data Aggregator</h3>
+                    <p class="text-gray-300">Collect and visualize data from multiple sources automatically</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-400 text-sm fade-in" style="animation-delay: 1.2s;">
+            <p>© 2023 Rovic James Somontina. All rights reserved.</p>
+            <p class="mt-2">Built with passion and n8n automation</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real implementation, you would send this data to a server
+            console.log({name, email, message});
+            
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+
+        // Add fade-in effect to elements as they come into view
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(element => {
+            element.style.opacity = 0;
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
