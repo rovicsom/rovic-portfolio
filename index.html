@@ -119,23 +119,41 @@
                 <h2 class="text-2xl font-bold mb-4 text-pink-400 flex items-center">
                     <i class="fas fa-envelope mr-2"></i> Contact Me
                 </h2>
-                <form id="contactForm" class="space-y-4">
-                    <div>
-                        <label for="name" class="block text-gray-300 mb-1">Name</label>
-                        <input type="text" id="name" class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-gray-300 mb-1">Email</label>
-                        <input type="email" id="email" class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-gray-300 mb-1">Message</label>
-                        <textarea id="message" rows="4" class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                    </div>
-                    <button type="submit" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded hover:opacity-90 transition-opacity">
-                        Send Message
-                    </button>
-                </form>
+<form id="contactForm" action="https://formsubmit.co/rovicsom@gmail.com" method="POST" class="space-y-4">
+    <!-- Name Field -->
+    <div>
+        <label for="name" class="block text-gray-300 mb-1">Name</label>
+        <input type="text" id="name" name="name" required
+            class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Email Field -->
+    <div>
+        <label for="email" class="block text-gray-300 mb-1">Email</label>
+        <input type="email" id="email" name="email" required
+            class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Message Field -->
+    <div>
+        <label for="message" class="block text-gray-300 mb-1">Message</label>
+        <textarea id="message" name="message" rows="4" required
+            class="w-full bg-gray-700 rounded px-4 py-2 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+    </div>
+
+    <!-- Optional Hidden Fields -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <!-- Optional: Redirect after submission -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+    <!-- Submit Button -->
+    <button type="submit"
+        class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded hover:opacity-90 transition-opacity">
+        Send Message
+    </button>
+</form>
+
                 <div class="mt-6 flex space-x-4">
                     <a href="https://www.linkedin.com/in/rovic-somontina-7b65bb331/" class="text-gray-300 hover:text-blue-400 transition-colors">
                         <i class="fab fa-linkedin text-2xl"></i>
@@ -218,3 +236,4 @@
     </script>
 </body>
 </html>
+
