@@ -204,19 +204,6 @@
     </div>
 
     <script>
-        // Simple form handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // In a real implementation, you would send this data to a server
-            console.log({name, email, message});
-            
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        });
 
         // Add fade-in effect to elements as they come into view
         const fadeElements = document.querySelectorAll('.fade-in');
@@ -236,4 +223,5 @@
     </script>
 </body>
 </html>
+
 
